@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meta — Monetize Your Facebook</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#9aa4b2;--accent:#6ee7b7;--accent2:#60a5fa}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial; background:linear-gradient(180deg,#071023 0%,var(--bg) 100%);color:#e6eef6}
+    .container{max-width:1100px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700;color:#042028}
+    nav a{color:var(--muted);margin-left:16px;text-decoration:none}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;margin-top:32px;align-items:center}
+    .hero h1{font-size:34px;margin:0 0 12px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .cta-row{display:flex;gap:12px}
+    .btn{background:var(--accent);color:#032025;padding:12px 16px;border-radius:10px;border:none;cursor:pointer;font-weight:600;text-decoration:none}
+    .btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);padding:10px 14px;border-radius:10px}
+
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.03); padding:18px; border-radius:12px}
+    .stats{display:flex;gap:12px;margin-top:12px}
+    .stat{flex:1;background:transparent;padding:12px;border-radius:10px;text-align:center}
+    .stat h3{margin:0;font-size:20px}
+    .stat p{color:var(--muted);margin:6px 0 0}
+
+    .how{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
+    .feature{padding:18px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent)}
+    .feature h4{margin:0 0 6px}
+    .feature p{margin:0;color:var(--muted)}
+
+    /* Dashboard mock */
+    .dashboard{margin-top:36px;display:grid;grid-template-columns:320px 1fr;gap:16px}
+    .sidebar{padding:18px;border-radius:12px}
+    .nav-item{padding:10px;border-radius:8px;color:var(--muted);display:flex;align-items:center;gap:10px}
+    .nav-item.active{background:linear-gradient(90deg, rgba(96,165,250,0.12), rgba(110,231,183,0.06));color:var(--accent2);}
+
+    .main-area{padding:18px;border-radius:12px}
+    .grid-tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .tile{padding:14px;border-radius:10px}
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th,td{padding:8px;text-align:left;border-bottom:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+
+    footer{margin-top:40px;color:var(--muted);text-align:center;padding:30px 0}
+
+    /* Responsive */
+    @media (max-width:980px){ .hero{grid-template-columns:1fr} .dashboard{grid-template-columns:1fr} .grid-tiles{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:560px){ .grid-tiles{grid-template-columns:1fr} .hero h1{font-size:24px} }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div style="background-color: #fff;" class="logo">
+            <img style="width: 50px;background-color: #fff;" src="/facebook-svgrepo-com.svg" alt="">
+        </div>
+        <div>
+          <div style="font-weight:700">Meta</div>
+          <div style="font-size:12px;color:var(--muted)">Monetize your Facebook presence</div>
+        </div>
+      </div>
+  
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Turn your Facebook into a revenue stream — simple, secure, and built for creators</h1>
+        <p>Monetize posts, videos and Messenger connections with seamless ad placements, tips, affiliate links and product drops — all managed from one dashboard.</p>
+        <div class="cta-row">
+          <a href="register.html" class="btn">Get Started — It's free</a>
+          <!-- <button class="btn-outline">Book demo</button> -->
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-size:13px;color:var(--muted)">Your estimated monthly earnings-Demo</div>
+              <div style="font-size:22px;font-weight:700;margin-top:6px">$1,240 <span style="font-size:12px;color:var(--muted);font-weight:500">(projected)</span></div>
+            </div>
+            <div style="text-align:right;color:var(--muted)">Connected accounts: <strong>None connected</strong></div>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <h3>4.2K</h3>
+              <p>Monthly visitors</p>
+            </div>
+            <div class="stat">
+              <h3>512</h3>
+              <p>Clicks to offers</p>
+            </div>
+            <div class="stat">
+              <h3>78</h3>
+              <p>Conversions</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="how">
+          <div class="feature card">
+            <h4>One-click FB Connect</h4>
+            <p>Secure OAuth flow to connect pages, profiles and groups.</p>
+          </div>
+          <div class="feature card">
+            <h4>Smart Placements</h4>
+            <p>Auto-inject monetization widgets into your posts and videos.</p>
+          </div>
+          <div class="feature card">
+            <h4>Payout & Analytics</h4>
+            <p>Daily settlement reports and deep analytics (CTR, RPM).</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card" style="display:flex;flex-direction:column;gap:12px">
+          <div style="font-weight:700">Creator dashboard (preview)</div>
+          <div style="font-size:12px;color:var(--muted)">Balance: <strong>$0</strong></div>
+          <div style="display:flex;gap:8px;align-items:center">
+            <div style="flex:1">
+              <div style="background:#04111a;padding:10px;border-radius:8px">Facebook: <strong>Inactive</strong></div>
+            </div>
+            <button class="btn" style="padding:8px 10px">Payout</button>
+          </div>
+
+          <div style="margin-top:6px" class="card">
+            <div style="font-size:13px;color:var(--muted)">Quick actions</div>
+            <div style="display:flex;gap:8px;margin-top:8px">
+              <button class="btn-outline">Create Offer</button>
+              <button class="btn-outline">Schedule Post</button>
+              <button class="btn-outline">Share Affiliate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard">
+      <aside class="sidebar card">
+        <div style="font-weight:700;margin-bottom:12px">Creator Hub</div>
+        <div class="nav-item active">📊 Dashboard</div>
+        <div class="nav-item">💸 Earnings</div>
+        <div class="nav-item">🗂 Offers</div>
+        <div class="nav-item">📅 Scheduler</div>
+        <div class="nav-item">🔌 Integrations</div>
+        <div class="nav-item">⚙️ Settings</div>
+      </aside>
+
+      <main class="main-area card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div style="font-weight:700">Dashboard</div>
+          <div style="color:var(--muted);font-size:13px">Overview • Last 30 days</div>
+        </div>
+
+        <div class="grid-tiles" style="margin-top:12px">
+          <div class="tile card">
+            <div style="font-size:12px;color:var(--muted)">Revenue</div>
+            <div style="font-weight:700;font-size:18px;margin-top:6px">$0</div>
+          </div>
+          <div class="tile card">
+            <div style="font-size:12px;color:var(--muted)">CTR</div>
+            <div style="font-weight:700;font-size:18px;margin-top:6px">7.1%</div>
+          </div>
+          <div class="tile card">
+            <div style="font-size:12px;color:var(--muted)">RPM</div>
+            <div style="font-weight:700;font-size:18px;margin-top:6px">$1.82</div>
+          </div>
+        </div>
+
+        <div style="margin-top:16px" class="card">
+          <div style="font-weight:600;margin-bottom:8px">Recent activity</div>
+          <table>
+            <thead><tr><th>When</th><th>Event</th><th>Impact</th></tr></thead>
+            <tbody>
+              <tr><td>Aug 28</td><td>New affiliate click</td><td>$0.24</td></tr>
+              <tr><td>Aug 27</td><td>Offer redeemed</td><td>$3.00</td></tr>
+              <tr><td>Aug 26</td><td>Profile connected</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </main>
+    </section>
+
+    <section id="pricing" style="margin-top:28px">
+      <div style="display:flex;gap:12px">
+        <div class="card" style="flex:1">
+          <div style="font-weight:700">Starter</div>
+          <div style="color:var(--muted)">Free • 0% platform fee • Basic analytics</div>
+          <div style="margin-top:12px"><a href="register.html" class="btn">Start Free</a></div>
+        </div>
+        <div class="card" style="flex:1">
+          <div style="font-weight:700">Pro</div>
+          <div style="color:var(--muted)">$29 / month • 5% platform fee • Advanced reports</div>
+          <div style="margin-top:12px"><button class="btn">Get Pro</button></div>
+        </div>
+        <div class="card" style="flex:1">
+          <div style="font-weight:700">Enterprise</div>
+          <div style="color:var(--muted)">Custom pricing • Dedicated onboarding • API access</div>
+          <div style="margin-top:12px"><button class="btn">Contact sales</button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" style="margin-top:28px" class="card">
+      <div style="font-weight:700">FAQ</div>
+      <div style="margin-top:8px;color:var(--muted)">
+        <div style="margin-bottom:6px"><strong>Q:</strong> How does Facebook integration work?<br/><strong>A:</strong> We use Facebook OAuth & Page APIs. You explicitly grant access to your pages and posts; we inject monetization widgets with your approval.</div>
+        <div style="margin-bottom:6px"><strong>Q:</strong> How do I get paid?<br/><strong>A:</strong> Payouts happen weekly to Stripe/PayPal or local bank after KYC verification.</div>
+      </div>
+    </section>
+
+    <footer>
+      © Meta • Built for creators • Terms • Privacy
+    </footer>
+  </div>
+
+  <script>
+    // Minimal interactive demo: toggle active nav (client-side only)
+    document.querySelectorAll('.nav-item').forEach(el => {
+      el.addEventListener('click', () => {
+        document.querySelectorAll('.nav-item').forEach(n=>n.classList.remove('active'));
+        el.classList.add('active');
+      })
+    });
+  </script>
+</body>
+</html>
